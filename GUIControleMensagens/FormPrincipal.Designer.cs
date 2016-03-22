@@ -45,7 +45,8 @@
             this.operaçãoToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(644, 28);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(483, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -54,13 +55,14 @@
             this.cadastrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.usuáriosToolStripMenuItem});
             this.cadastrosToolStripMenuItem.Name = "cadastrosToolStripMenuItem";
-            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(86, 24);
+            this.cadastrosToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
             this.cadastrosToolStripMenuItem.Text = "Cadastros";
+            this.cadastrosToolStripMenuItem.Click += new System.EventHandler(this.cadastrosToolStripMenuItem_Click);
             // 
             // usuáriosToolStripMenuItem
             // 
             this.usuáriosToolStripMenuItem.Name = "usuáriosToolStripMenuItem";
-            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(140, 26);
+            this.usuáriosToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.usuáriosToolStripMenuItem.Text = "Usuários";
             // 
             // operaçãoToolStripMenuItem
@@ -69,29 +71,30 @@
             this.envioDeMensagensToolStripMenuItem,
             this.leituraDeMensagensToolStripMenuItem});
             this.operaçãoToolStripMenuItem.Name = "operaçãoToolStripMenuItem";
-            this.operaçãoToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.operaçãoToolStripMenuItem.Size = new System.Drawing.Size(79, 20);
             this.operaçãoToolStripMenuItem.Text = "Mensagens";
             // 
             // envioDeMensagensToolStripMenuItem
             // 
             this.envioDeMensagensToolStripMenuItem.Name = "envioDeMensagensToolStripMenuItem";
-            this.envioDeMensagensToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.envioDeMensagensToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.envioDeMensagensToolStripMenuItem.Text = "Envio de Mensagens";
             this.envioDeMensagensToolStripMenuItem.Click += new System.EventHandler(this.envioDeMensagensToolStripMenuItem_Click);
             // 
             // leituraDeMensagensToolStripMenuItem
             // 
             this.leituraDeMensagensToolStripMenuItem.Name = "leituraDeMensagensToolStripMenuItem";
-            this.leituraDeMensagensToolStripMenuItem.Size = new System.Drawing.Size(228, 26);
+            this.leituraDeMensagensToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.leituraDeMensagensToolStripMenuItem.Text = "Leitura de Mensagens";
             // 
             // FormPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(644, 308);
+            this.ClientSize = new System.Drawing.Size(483, 250);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "FormPrincipal";
             this.Text = "Controle de Mensagens";
